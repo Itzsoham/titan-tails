@@ -1,13 +1,18 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Titan Trails | Epic Journeys Await" },
+    {
+      name: "description",
+      content:
+        "Embark on legendary adventures with Titan Trails — the ultimate travel platform for booking epic trips and managing them with titan-level control.",
+    },
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
-}
+const Home = () => {
+  return <div>Home</div>;
+};
+
+export default Home;
